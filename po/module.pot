@@ -1,0 +1,105 @@
+#: module.yaml
+msgid ""
+msgstr ""
+"Project-Id-Version: My Project 1.0\n"
+"Report-Msgid-Bugs-To: bugs@example.com\n"
+"POT-Creation-Date: Sat, 25 Jan 2025 23:37:02 +0000\n"
+"PO-Revision-Date: Sat, 25 Jan 2025 23:37:02 +0000\n"
+"Last-Translator: Your Name <yourname@example.com>\n"
+"Language-Team: Russian <ru@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Custom Script\n"
+#: module.yaml:6
+msgid "Appearance"
+msgstr ""
+
+#: module.yaml:8
+msgid "Date & Time"
+msgstr ""
+
+#: module.yaml:10
+msgid "Power"
+msgstr ""
+
+#: module.yaml:13
+msgid "Keyboard"
+msgstr ""
+
+#: ./sections/main.yml:1
+msgid "Themes"
+msgstr ""
+
+#: ./sections/main.yml:10
+msgid "Style"
+msgstr ""
+
+#: ./sections/main.yml:13
+msgid "Prefer dark or light for Adwaita applications"
+msgstr ""
+
+#: ./sections/main.yml:18
+msgid "Default"
+msgstr ""
+
+#: ./sections/main.yml:19
+msgid "Light"
+msgstr ""
+
+#: ./sections/main.yml:20
+msgid "Dark"
+msgstr ""
+
+#: ./sections/main.yml:21
+msgid "Clock"
+msgstr ""
+
+#: ./sections/main.yml:25
+msgid "Weekday"
+msgstr ""
+
+#: ./sections/main.yml:30
+msgid "Date"
+msgstr ""
+
+#: ./sections/main.yml:35
+msgid "Seconds"
+msgstr ""
+
+#: ./sections/main.yml:40
+msgid "Battery"
+msgstr ""
+
+#: ./sections/main.yml:44
+msgid "Show percentage"
+msgstr ""
+
+#: ./sections/keyboard.yaml:1
+msgid "Lang"
+msgstr ""
+
+#: ./sections/keyboard.yaml:5
+msgid "Switch language shortcut"
+msgstr ""
+
+#: ./sections/keyboard.yaml:10
+msgid "path"
+msgstr ""
+
+#: ./sections/keyboard.yaml:11
+msgid "name"
+msgstr ""
+
+#: ./sections/performance.yaml:1
+msgid "Performance"
+msgstr ""
+
+#: ./sections/performance.yaml:5
+msgid "Animations"
+msgstr ""
+
+#: ./sections/performance.yaml:6
+msgid "Animations can be disabled for performance"
+msgstr ""
+

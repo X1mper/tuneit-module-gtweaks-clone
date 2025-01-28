@@ -1,0 +1,10 @@
+- name: _Performance
+  page: Appearance
+  weight: 20
+  settings:
+    - name: _Animations
+      help: _Animations can be disabled for performance
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.desktop.interface.enable-animations

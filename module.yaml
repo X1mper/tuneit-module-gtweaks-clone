@@ -1,0 +1,14 @@
+- name: "TuneIt. Now!"
+  description: This is only example. Only!
+  cover: assets/cover.png
+  weight: 30
+  pages:
+    - name: "_Appearance"
+      icon: preferences-desktop-display-symbolic
+    - name: "_Date & Time"
+      icon: preferences-system-time-symbolic
+    - name: "_Power"
+      icon: battery-symbolic
+      icon: preferences-system-symbolic
+    - name: "_Keyboard"
+      icon: input-keyboard-symbolic

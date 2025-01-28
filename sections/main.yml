@@ -1,0 +1,48 @@
+- name: "_Themes"
+  weight: 0
+  page: "Appearance"
+  settings:
+    - name: IconTheme
+      type: entry
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.interface.icon-theme
+    - name: _Style
+      type: choice
+      gtype: string
+      help: _Prefer dark or light for Adwaita applications
+      backend: gsettings
+      key: org.gnome.desktop.interface.color-scheme
+      default: "default"
+      map:
+        _Default: default
+        _Light: prefer-light
+        _Dark: prefer-dark
+- name: _Clock
+  weight: 10
+  page: Date & Time
+  settings:
+    - name: _Weekday
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.desktop.interface.clock-show-weekday
+    - name: _Date
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.desktop.interface.clock-show-date
+    - name: _Seconds
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.desktop.interface.clock-show-seconds
+- name: _Battery
+  weight: 10
+  page: "Power"
+  settings:
+    - name: _Show percentage
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.desktop.interface.show-battery-percentage

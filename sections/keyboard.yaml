@@ -1,0 +1,11 @@
+- name: "_Lang"
+  weight: 0
+  page: "Keyboard"
+  settings:
+    - name: _Switch language shortcut
+      type: choice
+      gtype: string
+      backend: binary
+      params:
+        binary_path: "bin/"
+        binary_name: "langswitch.sh"
