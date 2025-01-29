@@ -1,9 +1,9 @@
 - name: "_Windows"
-  weight: 0
+  weight: 7
   page: "Windows"
   settings:
     - name: _Window Focus
-      type: choice
+      type: choice_radio
       gtype: string
       backend: gsettings
       key: org.gnome.desktop.wm.preferences.focus-mode

@@ -1,10 +1,10 @@
-#: module.yaml
+#: module.yml
 msgid ""
 msgstr ""
 "Project-Id-Version: My Project 1.0\n"
 "Report-Msgid-Bugs-To: bugs@example.com\n"
-"POT-Creation-Date: Sat, 25 Jan 2025 23:37:02 +0000\n"
-"PO-Revision-Date: 2025-01-26 02:37+0300\n"
+"POT-Creation-Date: Wed, 29 Jan 2025 22:24:51 +0000\n"
+"PO-Revision-Date: 2025-01-30 01:26+0300\n"
 "Last-Translator: \n"
 "Language-Team: Russian <ru@example.com>\n"
 "Language: ru_RU\n"
@@ -13,94 +13,259 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.5\n"
 
-#: module.yaml:6
+#: module.yml:6
 msgid "Appearance"
 msgstr "Внешность"
 
-#: module.yaml:8
+#: module.yml:8
 msgid "Date & Time"
 msgstr "Дата и время"
 
-#: module.yaml:10
+#: module.yml:10
 msgid "Power"
 msgstr "Питание"
 
-#: module.yaml:13
+#: module.yml:13
 msgid "Keyboard"
 msgstr "Клавиатура"
 
-#: sections/main.yml:1
-msgid "Themes"
-msgstr "Темы"
+#: module.yml:15 sections/Fonts.yml:5
+msgid "Fonts"
+msgstr "Шрифты"
 
-#: sections/main.yml:10
-msgid "Style"
-msgstr "Стиль"
+#: module.yml:17
+msgid "Sound"
+msgstr "Звук"
 
-#: sections/main.yml:13
-msgid "Prefer dark or light for Adwaita applications"
-msgstr "Цветовая схема для Adwaita приложений"
+#: module.yml:19
+msgid "Mouse"
+msgstr "Мышь"
 
-#: sections/main.yml:18
-msgid "Default"
-msgstr "По-умолчанию"
+#: module.yml:21 sections/Windows.yml:1
+msgid "Windows"
+msgstr "Окна"
 
-#: sections/main.yml:19
-msgid "Light"
-msgstr "Светлый"
+#: sections/Appearance.yml:1
+msgid "Styles"
+msgstr "Стили"
 
-#: sections/main.yml:20
-msgid "Dark"
-msgstr "Тёмный"
+#: sections/Appearance.yml:5
+msgid "Cursor Theme"
+msgstr "Тема курсора"
 
-#: sections/main.yml:21
-msgid "Clock"
-msgstr "Часы"
+#: sections/Appearance.yml:19
+msgid "Icon Theme"
+msgstr "Тема иконок"
 
-#: sections/main.yml:25
-msgid "Weekday"
-msgstr "День недели"
+#: sections/Appearance.yml:35
+msgid "GTK3 Theme"
+msgstr "Тема GTK3"
 
-#: sections/main.yml:30
-msgid "Date"
-msgstr "Дата"
+#: sections/Appearance.yml:49
+msgid "Wallpaper"
+msgstr "Фон рабочего стола"
 
-#: sections/main.yml:35
-msgid "Seconds"
-msgstr "Секунды"
+#: sections/Fonts.yml:1
+msgid "Rendering"
+msgstr "Рендеринг"
 
-#: sections/main.yml:40
-msgid "Battery"
-msgstr "Батарея"
+#: sections/Fonts.yml:13
+msgid "Subpixel (for LCD screens)"
+msgstr "Субпиксельное (для ЖК-экранов)"
 
-#: sections/main.yml:44
-msgid "Show percentage"
-msgstr "Показывать проценты"
+#: sections/Fonts.yml:14
+msgid "Standard (grayscale)"
+msgstr "Стандартное (оттенки серого)"
 
-#: sections/keyboard.yaml:1
-msgid "Lang"
-msgstr "Язык"
+#: sections/Fonts.yml:15 sections/Fonts.yml:27
+msgid "None"
+msgstr "Нет"
 
-#: sections/keyboard.yaml:5
+#: sections/Fonts.yml:16
+msgid "Hinting"
+msgstr "Хиттинг"
+
+#: sections/Fonts.yml:24
+msgid "Full"
+msgstr "Полный"
+
+#: sections/Fonts.yml:25
+msgid "Medium"
+msgstr "Средний"
+
+#: sections/Fonts.yml:26
+msgid "Slight"
+msgstr "Незначительный"
+
+#: sections/Fonts.yml:28
+msgid "Size"
+msgstr "Размер"
+
+#: sections/Fonts.yml:32
+msgid "Scaling Factor"
+msgstr "Коэффициент масштабирования"
+
+#: sections/Keyboard.yml:5
+msgid "Show Extended Input Sources"
+msgstr "Показать дополнительные источники ввода"
+
+#: sections/Keyboard.yml:6
+msgid "Increases the choice of input sources in the Settings application"
+msgstr "Увеличивает выбор источников ввода в приложении \"Настройки\""
+
+#: sections/Keyboard.yml:13
+msgid "Layout"
+msgstr "Раскладка"
+
+#: sections/Keyboard.yml:18
+msgid "Overrides shortcuts to use keybindings from the Emacs editor"
+msgstr ""
+"Переопределяет сочетания клавиш для использования привязок клавиш из "
+"редактора Emacs"
+
+#: sections/Keyboard.yml:28
 msgid "Switch language shortcut"
 msgstr "Комбинация для смены раскладки клавиатуры"
 
-#: sections/keyboard.yaml:10
-msgid "path"
+#: sections/Keyboard.yml:35
+msgid "Overview Shortcut"
+msgstr "Клавиша для режима \"Обзор\""
+
+#: sections/Keyboard.yml:43
+msgid "Super L"
+msgstr "Левая клавиша Win"
+
+#: sections/Keyboard.yml:44
+msgid "Super R"
+msgstr "Правая клавиша Win"
+
+#: sections/Mouse.yml:5
+msgid "Middle mouse button paste"
+msgstr "Вставка средней кнопкой мыши"
+
+#: sections/Sound.yml:5
+msgid "Allow volume to exceed 100% "
+msgstr "Разрешить громкость больше 100%"
+
+#: sections/Windows.yml:5
+msgid "Window Focus"
+msgstr "Фокус окон"
+
+#: sections/Windows.yml:12
+msgid "Click to Focus"
+msgstr "Клик для фокуса"
+
+#: sections/Windows.yml:13
+msgid "Focus on Hover"
+msgstr "Навести для фокуса"
+
+#: sections/Windows.yml:14
+msgid "Focus Follows Mouse"
+msgstr "Фокус следует за мышью"
+
+#: sections/Windows.yml:15
+msgid ""
+"Allows selecting the window focus behavior. Choose between focusing on "
+"click, hover, or mouse position"
+msgstr ""
+"Позволяет выбрать режим фокусировки окна. Выберите между фокусировкой по "
+"щелчку, наведению курсора или положению мыши"
+
+#: sections/Windows.yml:16
+msgid "Titlebar Actions"
+msgstr "Действия с помощью заголовка окна"
+
+#: sections/Windows.yml:19
+msgid "Double-Click"
+msgstr "Двойной клик"
+
+#: sections/Windows.yml:24
+msgid "Middle-Click"
+msgstr "Клик средней кнопкой мыши"
+
+#: sections/Windows.yml:29
+msgid "Secondary-Click"
+msgstr "Клик правой кнопкой мыгки"
+
+#: sections/Windows.yml:35
+msgid "Click Actions"
+msgstr "Действия при клике"
+
+#: sections/Windows.yml:39
+msgid "Attach Modal Dialogs"
+msgstr "Прикреплять диалоговые  окна"
+
+#: sections/Windows.yml:45
+msgid ""
+"When enabled, modal dialog windows are attached to their parent windows and "
+"cannot be moved"
+msgstr ""
+"Если этот параметр включен, модальные диалоговые окна присоединяются к своим "
+"родительским окнам и не могут быть перемещены"
+
+#: sections/Windows.yml:47
+msgid "Center New Windows"
+msgstr "Центрировать новые окна"
+
+#: sections/Windows.yml:54
+msgid "Window Action Key"
+msgstr "Клавиша действий над окном"
+
+#: sections/Windows.yml:60
+msgid "Disabled"
+msgstr "Отключено"
+
+#: sections/Windows.yml:61
+msgid "Alt"
 msgstr ""
 
-#: sections/keyboard.yaml:11
-msgid "name"
+#: sections/Windows.yml:62
+msgid "Super"
 msgstr ""
 
-#: sections/performance.yaml:1
-msgid "Performance"
-msgstr "Отзывчивость"
+#: sections/Windows.yml:64
+msgid "Resize with Secondary-Click"
+msgstr "Изменять размер правой кнопкой мыши"
 
-#: sections/performance.yaml:5
-msgid "Animations"
-msgstr "Анимации"
+#: sections/Windows.yml:71
+msgid "Raise Windows When Focused"
+msgstr "Поднимать окна при фокусе"
 
-#: sections/performance.yaml:6
-msgid "Animations can be disabled for performance"
-msgstr "Анимации могут быть выключены для отзывчивости"
+#~ msgid "Prefer dark or light for Adwaita applications"
+#~ msgstr "Цветовая схема для Adwaita приложений"
+
+#~ msgid "Default"
+#~ msgstr "По-умолчанию"
+
+#~ msgid "Dark"
+#~ msgstr "Тёмный"
+
+#~ msgid "Clock"
+#~ msgstr "Часы"
+
+#~ msgid "Weekday"
+#~ msgstr "День недели"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Seconds"
+#~ msgstr "Секунды"
+
+#~ msgid "Battery"
+#~ msgstr "Батарея"
+
+#~ msgid "Show percentage"
+#~ msgstr "Показывать проценты"
+
+#~ msgid "Lang"
+#~ msgstr "Язык"
+
+#~ msgid "Performance"
+#~ msgstr "Отзывчивость"
+
+#~ msgid "Animations"
+#~ msgstr "Анимации"
+
+#~ msgid "Animations can be disabled for performance"
+#~ msgstr "Анимации могут быть выключены для отзывчивости"

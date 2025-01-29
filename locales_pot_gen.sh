@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-MAIN_YAML_FILE="module.yaml"
+MAIN_YAML_FILE="module.yml"
 POT_FILE="./po/module.pot"
 ADDITIONAL_YAML_DIR="./sections"
 
@@ -39,7 +39,7 @@ add_header() {
 process_file() {
     local file="$1"
     local matches
-    matches=$(grep -noP '_[^:"]*' "$file")
+    matches=$(grep -noP '[\s"'\'']\K_[^:"]*' "$file")
 
     if [[ -z "$matches" ]]; then
         echo "В файле '$file' не найдено строк с символом '_'."
@@ -50,7 +50,8 @@ process_file() {
         while IFS= read -r match; do
             local line_num=$(echo "$match" | cut -d: -f1)
             local line_content=$(echo "$match" | cut -d: -f2-)
-            local key=$(echo "$line_content" | sed 's/^_//; s/"$//')
+
+            local key=$(echo "$line_content" | sed 's/^_//; s/["'\'']$//')
 
             if [[ -n "$key" ]]; then
                 echo "Добавляем в POT: $key из файла $file:$line_num"

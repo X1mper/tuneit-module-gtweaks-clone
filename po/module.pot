@@ -1,105 +1,233 @@
-#: module.yaml
+#: module.yml
 msgid ""
 msgstr ""
 "Project-Id-Version: My Project 1.0\n"
 "Report-Msgid-Bugs-To: bugs@example.com\n"
-"POT-Creation-Date: Sat, 25 Jan 2025 23:37:02 +0000\n"
-"PO-Revision-Date: Sat, 25 Jan 2025 23:37:02 +0000\n"
+"POT-Creation-Date: Wed, 29 Jan 2025 22:24:51 +0000\n"
+"PO-Revision-Date: Wed, 29 Jan 2025 22:24:51 +0000\n"
 "Last-Translator: Your Name <yourname@example.com>\n"
 "Language-Team: Russian <ru@example.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Custom Script\n"
-#: module.yaml:6
+#: module.yml:6
 msgid "Appearance"
 msgstr ""
 
-#: module.yaml:8
+#: module.yml:8
 msgid "Date & Time"
 msgstr ""
 
-#: module.yaml:10
+#: module.yml:10
 msgid "Power"
 msgstr ""
 
-#: module.yaml:13
+#: module.yml:13
 msgid "Keyboard"
 msgstr ""
 
-#: ./sections/main.yml:1
-msgid "Themes"
+#: module.yml:15
+msgid "Fonts"
 msgstr ""
 
-#: ./sections/main.yml:10
-msgid "Style"
+#: module.yml:17
+msgid "Sound"
 msgstr ""
 
-#: ./sections/main.yml:13
-msgid "Prefer dark or light for Adwaita applications"
+#: module.yml:19
+msgid "Mouse"
 msgstr ""
 
-#: ./sections/main.yml:18
-msgid "Default"
+#: module.yml:21
+msgid "Windows"
 msgstr ""
 
-#: ./sections/main.yml:19
-msgid "Light"
+#: ./sections/Appearance.yml:1
+msgid "Styles"
 msgstr ""
 
-#: ./sections/main.yml:20
-msgid "Dark"
+#: ./sections/Appearance.yml:5
+msgid "Cursor Theme"
 msgstr ""
 
-#: ./sections/main.yml:21
-msgid "Clock"
+#: ./sections/Appearance.yml:19
+msgid "Icon Theme"
 msgstr ""
 
-#: ./sections/main.yml:25
-msgid "Weekday"
+#: ./sections/Appearance.yml:35
+msgid "GTK3 Theme"
 msgstr ""
 
-#: ./sections/main.yml:30
-msgid "Date"
+#: ./sections/Appearance.yml:49
+msgid "Wallpaper"
 msgstr ""
 
-#: ./sections/main.yml:35
-msgid "Seconds"
+#: ./sections/Fonts.yml:1
+msgid "Rendering"
 msgstr ""
 
-#: ./sections/main.yml:40
-msgid "Battery"
+#: ./sections/Fonts.yml:5
+msgid "Fonts"
 msgstr ""
 
-#: ./sections/main.yml:44
-msgid "Show percentage"
+#: ./sections/Fonts.yml:13
+msgid "Subpixel (for LCD screens)"
 msgstr ""
 
-#: ./sections/keyboard.yaml:1
-msgid "Lang"
+#: ./sections/Fonts.yml:14
+msgid "Standard (grayscale)"
 msgstr ""
 
-#: ./sections/keyboard.yaml:5
+#: ./sections/Fonts.yml:15
+msgid "None"
+msgstr ""
+
+#: ./sections/Fonts.yml:16
+msgid "Hinting"
+msgstr ""
+
+#: ./sections/Fonts.yml:24
+msgid "Full"
+msgstr ""
+
+#: ./sections/Fonts.yml:25
+msgid "Medium"
+msgstr ""
+
+#: ./sections/Fonts.yml:26
+msgid "Slight"
+msgstr ""
+
+#: ./sections/Fonts.yml:27
+msgid "None"
+msgstr ""
+
+#: ./sections/Fonts.yml:28
+msgid "Size"
+msgstr ""
+
+#: ./sections/Fonts.yml:32
+msgid "Scaling Factor"
+msgstr ""
+
+#: ./sections/Keyboard.yml:5
+msgid "Show Extended Input Sources"
+msgstr ""
+
+#: ./sections/Keyboard.yml:6
+msgid "Increases the choice of input sources in the Settings application"
+msgstr ""
+
+#: ./sections/Keyboard.yml:13
+msgid "Layout"
+msgstr ""
+
+#: ./sections/Keyboard.yml:18
+msgid "Overrides shortcuts to use keybindings from the Emacs editor"
+msgstr ""
+
+#: ./sections/Keyboard.yml:28
 msgid "Switch language shortcut"
 msgstr ""
 
-#: ./sections/keyboard.yaml:10
-msgid "path"
+#: ./sections/Keyboard.yml:35
+msgid "Overview Shortcut"
 msgstr ""
 
-#: ./sections/keyboard.yaml:11
-msgid "name"
+#: ./sections/Keyboard.yml:43
+msgid "Super L"
 msgstr ""
 
-#: ./sections/performance.yaml:1
-msgid "Performance"
+#: ./sections/Keyboard.yml:44
+msgid "Super R"
 msgstr ""
 
-#: ./sections/performance.yaml:5
-msgid "Animations"
+#: ./sections/Mouse.yml:5
+msgid "Middle mouse button paste"
 msgstr ""
 
-#: ./sections/performance.yaml:6
-msgid "Animations can be disabled for performance"
+#: ./sections/Sound.yml:5
+msgid "Allow volume to exceed 100% "
+msgstr ""
+
+#: ./sections/Windows.yml:1
+msgid "Windows"
+msgstr ""
+
+#: ./sections/Windows.yml:5
+msgid "Window Focus"
+msgstr ""
+
+#: ./sections/Windows.yml:12
+msgid "Click to Focus"
+msgstr ""
+
+#: ./sections/Windows.yml:13
+msgid "Focus on Hover"
+msgstr ""
+
+#: ./sections/Windows.yml:14
+msgid "Focus Follows Mouse"
+msgstr ""
+
+#: ./sections/Windows.yml:15
+msgid "Allows selecting the window focus behavior. Choose between focusing on click, hover, or mouse position"
+msgstr ""
+
+#: ./sections/Windows.yml:16
+msgid "Titlebar Actions"
+msgstr ""
+
+#: ./sections/Windows.yml:19
+msgid "Double-Click"
+msgstr ""
+
+#: ./sections/Windows.yml:24
+msgid "Middle-Click"
+msgstr ""
+
+#: ./sections/Windows.yml:29
+msgid "Secondary-Click"
+msgstr ""
+
+#: ./sections/Windows.yml:35
+msgid "Click Actions"
+msgstr ""
+
+#: ./sections/Windows.yml:39
+msgid "Attach Modal Dialogs"
+msgstr ""
+
+#: ./sections/Windows.yml:45
+msgid "When enabled, modal dialog windows are attached to their parent windows and cannot be moved"
+msgstr ""
+
+#: ./sections/Windows.yml:47
+msgid "Center New Windows"
+msgstr ""
+
+#: ./sections/Windows.yml:54
+msgid "Window Action Key"
+msgstr ""
+
+#: ./sections/Windows.yml:60
+msgid "Disabled"
+msgstr ""
+
+#: ./sections/Windows.yml:61
+msgid "Alt"
+msgstr ""
+
+#: ./sections/Windows.yml:62
+msgid "Super"
+msgstr ""
+
+#: ./sections/Windows.yml:64
+msgid "Resize with Secondary-Click"
+msgstr ""
+
+#: ./sections/Windows.yml:71
+msgid "Raise Windows When Focused"
 msgstr ""
 

@@ -2,7 +2,7 @@
   weight: 0
   page: "Appearance"
   settings:
-    - name: Cursor Theme
+    - name: _Cursor Theme
       type: choice
       gtype: string
       backend: gsettings
@@ -16,7 +16,7 @@
           - ~/.local/share/icons/
           - ~/.icons/
 
-    - name: Icon Theme
+    - name: _Icon Theme
       type: choice
       gtype: string
       backend: gsettings
@@ -32,7 +32,7 @@
         exclude_neighbor_files:
           - cursor.theme
 
-    - name: GTK3 Theme
+    - name: _GTK3 Theme
       type: choice
       gtype: string
       backend: gsettings
