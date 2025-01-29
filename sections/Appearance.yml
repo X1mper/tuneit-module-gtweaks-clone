@@ -3,20 +3,49 @@
   page: "Appearance"
   settings:
     - name: Cursor Theme
-      type: entry
+      type: choice
       gtype: string
       backend: gsettings
       key: org.gnome.desktop.interface.cursor-theme
+      search_target:
+        type: value_in_file
+        file_pattern: index.theme
+        key: Name
+        search_paths:
+          - /usr/share/icons/
+          - ~/.local/share/icons/
+          - ~/.icons/
+
     - name: Icon Theme
-      type: entry
+      type: choice
       gtype: string
       backend: gsettings
       key: org.gnome.desktop.interface.icon-theme
+      search_target:
+        type: value_in_file
+        file_pattern: index.theme
+        key: Name
+        search_paths:
+          - /usr/share/icons/
+          - ~/.local/share/icons/
+          - ~/.icons/
+        exclude_neighbor_files:
+          - cursor.theme
+
     - name: GTK3 Theme
-      type: entry
+      type: choice
       gtype: string
       backend: gsettings
       key: org.gnome.desktop.interface.gtk-theme
+      search_target:
+        type: value_in_file
+        file_pattern: index.theme
+        key: Name
+        search_paths:
+          - /usr/share/themes/
+          - ~/.local/share/themes/
+          - ~/.themes/
+
 - name: "_Wallpaper"
   weight: 1
   page: "Appearance"
