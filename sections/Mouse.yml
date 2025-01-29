@@ -1,0 +1,10 @@
+- name: "Mouse"
+  weight: 0
+  page: "Mouse"
+  settings:
+    - name: _Middle mouse button paste
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      default: true
+      key: org.gnome.desktop.interface.gtk-enable-primary-paste

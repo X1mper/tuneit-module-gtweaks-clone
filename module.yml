@@ -1,0 +1,23 @@
+- name: "GNOME Tweaks clone"
+  description: An attempt to clone settings from the GNOME Tweaks into Tune It! :) 
+  cover: assets/cover.png
+  weight: 1
+  pages:
+    - name: "_Appearance"
+      icon: preferences-desktop-display-symbolic
+    - name: "_Date & Time"
+      icon: preferences-system-time-symbolic
+    - name: "_Power"
+      icon: battery-symbolic
+      icon: preferences-system-symbolic
+    - name: "_Keyboard"
+      icon: input-keyboard-symbolic
+    - name: "_Fonts"
+      icon: preferences-desktop-font-symbolic
+    - name: "_Sound"
+      icon: org.gnome.Settings-sound-symbolic
+    - name: "_Mouse"
+      icon: input-mouse-symbolic
+    - name: "_Windows"
+      icon: focus-windows-symbolic
+ 

@@ -1,0 +1,76 @@
+- name: "_Windows"
+  weight: 0
+  page: "Windows"
+  settings:
+    - name: _Window Focus
+      type: choice
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.wm.preferences.focus-mode
+      default: click
+      map:
+        _Click to Focus: click
+        _Focus on Hover: sloppy
+        _Focus Follows Mouse: mouse
+      help: _Allows selecting the window focus behavior. Choose between focusing on click, hover, or mouse position
+- name: _Titlebar Actions
+  page: "Windows"
+  settings:
+    - name: _Double-Click
+      type: choice
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.wm.preferences.action-double-click-titlebar
+    - name: _Middle-Click
+      type: choice
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.wm.preferences.action-middle-click-titlebar
+    - name: _Secondary-Click
+      type: choice
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.wm.preferences.action-right-click-titlebar
+
+- name: _Click Actions
+  page: "Windows"
+  settings:
+
+    - name: _Attach Modal Dialogs
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.mutter.attach-modal-dialogs
+      default: true
+      help: _When enabled, modal dialog windows are attached to their parent windows and cannot be moved
+
+    - name: _Center New Windows
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.mutter.center-new-windows
+      default: false
+
+    - name: _Window Action Key
+      type: choice
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.wm.preferences.mouse-button-modifier
+      map:
+        _Disabled: disabled
+        _Alt: <Alt>
+        _Super: <Super>
+
+    - name: _Resize with Secondary-Click
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.desktop.wm.preferences.resize-with-right-button
+      default: true
+
+    - name: _Raise Windows When Focused
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      key: org.gnome.desktop.wm.preferences.auto-raise
+      default: false

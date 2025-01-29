@@ -1,0 +1,44 @@
+- name: "Extra"
+  weight: 0
+  page: "Keyboard"
+  settings:
+    - name: _Show Extended Input Sources
+      help: _Increases the choice of input sources in the Settings application
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      default: true
+      key: org.gnome.desktop.input-sources.show-all-sources
+  
+- name: "_Layout"
+  weight: 99
+  page: "Keyboard"
+  settings:
+    - name: Emacs Input
+      help: _Overrides shortcuts to use keybindings from the Emacs editor
+      type: boolean
+      gtype: string
+      backend: gsettings
+      default: Default
+      key: org.gnome.desktop.interface.gtk-key-theme
+      map:
+       True: Emacs
+       False: Default
+
+    - name: _Switch language shortcut
+      type: choice
+      gtype: string
+      backend: binary
+      params:
+        binary_path: "bin/"
+        binary_name: "langswitch.sh"
+    - name: _Overview Shortcut
+      type: choice
+      gtype: string
+      help:
+      backend: gsettings
+      key: org.gnome.mutter.overlay-key
+      default: "slight"
+      map:
+        _Super L: Super_L
+        _Super R: Super_R

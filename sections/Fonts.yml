@@ -1,0 +1,42 @@
+- name: "_Rendering"
+  weight: 0
+  page: "Fonts"
+  settings:
+    - name: _Fonts
+      type: choice_radio
+      gtype: string
+      help:
+      backend: gsettings
+      key: org.gnome.desktop.interface.font-antialiasing
+      default: grayscale
+      map:
+        _Subpixel (for LCD screens): rgba
+        _Standard (grayscale): grayscale
+        _None: none
+    - name: _Hinting
+      type: choice_radio
+      gtype: string
+      help:
+      backend: gsettings
+      key: org.gnome.desktop.interface.font-hinting
+      default: "slight"
+      map:
+        _Full: full
+        _Medium: medium
+        _Slight: slight
+        _None: none
+- name: "_Size"
+  weight: 0
+  page: "Fonts"
+  settings:
+    - name: _Scaling Factor
+      type: number
+      gtype: d
+      backend: gsettings
+      key: org.gnome.desktop.interface.text-scaling-factor
+      default: 1.0
+      map:
+        upper: 3.0
+        lower: 0.5
+        step: 0.01
+        digits: 2

@@ -1,0 +1,42 @@
+- name: "_Styles"
+  weight: 0
+  page: "Appearance"
+  settings:
+    - name: Cursor Theme
+      type: entry
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.interface.cursor-theme
+    - name: Icon Theme
+      type: entry
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.interface.icon-theme
+    - name: GTK3 Theme
+      type: entry
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.interface.gtk-theme
+- name: "_Wallpaper"
+  weight: 1
+  page: "Appearance"
+  settings:
+    - name: Wallpaper
+      type: file
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.background.picture-uri
+      map:
+        extensions: ["*.png", "*.jpeg", "*.jpg", "*.svg", "*.webp"]
+    - name: Wallpaper (dark)
+      type: file
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.background.picture-uri-dark
+      map:
+        extensions: [ "*.png", "*.jpeg", "*.jpg", "*.svg", "*.webp" ]
+    - name: Wallpaper adjustment
+      type: choice
+      gtype: string
+      backend: gsettings
+      key: org.gnome.desktop.background.picture-options

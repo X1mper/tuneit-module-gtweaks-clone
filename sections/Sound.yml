@@ -1,0 +1,11 @@
+- name: "Sound"
+  weight: 0
+  page: "Sound"
+  settings:
+    - name: _Allow volume to exceed 100% 
+      help: up to 150%
+      type: boolean
+      gtype: boolean
+      backend: gsettings
+      default: false
+      key: org.gnome.desktop.sound.allow-volume-above-100-percent
