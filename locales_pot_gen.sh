@@ -4,6 +4,8 @@ MAIN_YAML_FILE="module.yml"
 POT_FILE="./po/module.pot"
 ADDITIONAL_YAML_DIR="./sections"
 
+mkdir -p "$(dirname "$POT_FILE")"
+
 echo "" > "$POT_FILE"
 
 add_message() {
@@ -20,13 +22,12 @@ add_message() {
 
 add_header() {
     {
-        echo "#: $MAIN_YAML_FILE"
         echo "msgid \"\""
         echo "msgstr \"\""
         echo "\"Project-Id-Version: My Project 1.0\\n\""
         echo "\"Report-Msgid-Bugs-To: bugs@example.com\\n\""
-        echo "\"POT-Creation-Date: $(date -Ru)\\n\""
-        echo "\"PO-Revision-Date: $(date -Ru)\\n\""
+        echo "\"POT-Creation-Date: $(date +"%Y-%m-%d %H:%M%z")\\n\""
+        echo "\"PO-Revision-Date: $(date +"%Y-%m-%d %H:%M%z")\\n\""
         echo "\"Last-Translator: Your Name <yourname@example.com>\\n\""
         echo "\"Language-Team: Russian <ru@example.com>\\n\""
         echo "\"MIME-Version: 1.0\\n\""
@@ -39,7 +40,7 @@ add_header() {
 process_file() {
     local file="$1"
     local matches
-    matches=$(grep -noP '[\s"'\'']\K_[^:"]*' "$file")
+    matches=$(grep -noP '[\s"'"'"']\K_[^:"]*' "$file")
 
     if [[ -z "$matches" ]]; then
         echo "В файле '$file' не найдено строк с символом '_'."
@@ -48,10 +49,13 @@ process_file() {
         echo "$matches"
 
         while IFS= read -r match; do
-            local line_num=$(echo "$match" | cut -d: -f1)
-            local line_content=$(echo "$match" | cut -d: -f2-)
+            local line_num
+            line_num=$(echo "$match" | cut -d: -f1)
+            local line_content
+            line_content=$(echo "$match" | cut -d: -f2-)
 
-            local key=$(echo "$line_content" | sed 's/^_//; s/["'\'']$//')
+            local key
+            key=$(echo "$line_content" | sed 's/^_//; s/["'"'"']$//')
 
             if [[ -n "$key" ]]; then
                 echo "Добавляем в POT: $key из файла $file:$line_num"
