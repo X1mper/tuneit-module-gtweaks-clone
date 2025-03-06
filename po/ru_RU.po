@@ -1,10 +1,9 @@
-#: module.yml
 msgid ""
 msgstr ""
 "Project-Id-Version: My Project 1.0\n"
 "Report-Msgid-Bugs-To: bugs@example.com\n"
-"POT-Creation-Date: Wed, 29 Jan 2025 22:24:51 +0000\n"
-"PO-Revision-Date: 2025-01-30 01:26+0300\n"
+"POT-Creation-Date: 2025-03-06 01:01+0300\n"
+"PO-Revision-Date: 2025-03-06 01:07+0300\n"
 "Last-Translator: \n"
 "Language-Team: Russian <ru@example.com>\n"
 "Language: ru_RU\n"
@@ -188,14 +187,34 @@ msgid "Secondary-Click"
 msgstr "Клик правой кнопкой мыгки"
 
 #: sections/Windows.yml:35
+msgid "Titlebar Buttons"
+msgstr "Кнопки заголовка окна"
+
+#: sections/Windows.yml:39
+msgid "Close"
+msgstr "Закрыть "
+
+#: sections/Windows.yml:46
+msgid "Minimize"
+msgstr "Свернуть"
+
+#: sections/Windows.yml:53
+msgid "Maximize"
+msgstr "Развернуть"
+
+#: sections/Windows.yml:60
+msgid "Buttons on the right"
+msgstr "Кнопки справа"
+
+#: sections/Windows.yml:68
 msgid "Click Actions"
 msgstr "Действия при клике"
 
-#: sections/Windows.yml:39
+#: sections/Windows.yml:72
 msgid "Attach Modal Dialogs"
 msgstr "Прикреплять диалоговые  окна"
 
-#: sections/Windows.yml:45
+#: sections/Windows.yml:78
 msgid ""
 "When enabled, modal dialog windows are attached to their parent windows and "
 "cannot be moved"
@@ -203,31 +222,31 @@ msgstr ""
 "Если этот параметр включен, модальные диалоговые окна присоединяются к своим "
 "родительским окнам и не могут быть перемещены"
 
-#: sections/Windows.yml:47
+#: sections/Windows.yml:80
 msgid "Center New Windows"
 msgstr "Центрировать новые окна"
 
-#: sections/Windows.yml:54
+#: sections/Windows.yml:87
 msgid "Window Action Key"
 msgstr "Клавиша действий над окном"
 
-#: sections/Windows.yml:60
+#: sections/Windows.yml:93
 msgid "Disabled"
 msgstr "Отключено"
 
-#: sections/Windows.yml:61
+#: sections/Windows.yml:94
 msgid "Alt"
 msgstr ""
 
-#: sections/Windows.yml:62
+#: sections/Windows.yml:95
 msgid "Super"
 msgstr ""
 
-#: sections/Windows.yml:64
+#: sections/Windows.yml:97
 msgid "Resize with Secondary-Click"
 msgstr "Изменять размер правой кнопкой мыши"
 
-#: sections/Windows.yml:71
+#: sections/Windows.yml:104
 msgid "Raise Windows When Focused"
 msgstr "Поднимать окна при фокусе"
 

@@ -32,6 +32,39 @@
       backend: gsettings
       key: org.gnome.desktop.wm.preferences.action-right-click-titlebar
 
+- name: _Titlebar Buttons
+  page: "Windows"
+  type: custom
+  settings:
+    - name: _Close
+      type: boolean
+      get_command: "python3 {module_path}/bin/window_buttons.py has_button close"
+      set_command: "python3 {module_path}/bin/window_buttons.py close {value}"
+      map:
+        True: "true"
+        False: "false"
+    - name: _Minimize
+      type: boolean
+      get_command: "python3 {module_path}/bin/window_buttons.py has_button minimize"
+      set_command: "python3 {module_path}/bin/window_buttons.py minimize {value}"
+      map:
+        True: "true"
+        False: "false"
+    - name: _Maximize
+      type: boolean
+      get_command: "python3 {module_path}/bin/window_buttons.py has_button maximize"
+      set_command: "python3 {module_path}/bin/window_buttons.py maximize {value}"
+      map:
+        True: "true"
+        False: "false"
+    - name: _Buttons on the right
+      type: boolean
+      get_command: "python3 {module_path}/bin/window_buttons.py get_button_side"
+      set_command: "python3 {module_path}/bin/window_buttons.py toggle_side"
+      map:
+        True: "true"
+        False: "false"
+
 - name: _Click Actions
   page: "Windows"
   settings:

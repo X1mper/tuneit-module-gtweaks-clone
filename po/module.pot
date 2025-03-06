@@ -1,10 +1,9 @@
-#: module.yml
 msgid ""
 msgstr ""
 "Project-Id-Version: My Project 1.0\n"
 "Report-Msgid-Bugs-To: bugs@example.com\n"
-"POT-Creation-Date: Wed, 29 Jan 2025 22:24:51 +0000\n"
-"PO-Revision-Date: Wed, 29 Jan 2025 22:24:51 +0000\n"
+"POT-Creation-Date: 2025-03-06 01:01+0300\n"
+"PO-Revision-Date: 2025-03-06 01:01+0300\n"
 "Last-Translator: Your Name <yourname@example.com>\n"
 "Language-Team: Russian <ru@example.com>\n"
 "MIME-Version: 1.0\n"
@@ -192,42 +191,62 @@ msgid "Secondary-Click"
 msgstr ""
 
 #: ./sections/Windows.yml:35
-msgid "Click Actions"
+msgid "Titlebar Buttons"
 msgstr ""
 
 #: ./sections/Windows.yml:39
-msgid "Attach Modal Dialogs"
+msgid "Close"
 msgstr ""
 
-#: ./sections/Windows.yml:45
-msgid "When enabled, modal dialog windows are attached to their parent windows and cannot be moved"
+#: ./sections/Windows.yml:46
+msgid "Minimize"
 msgstr ""
 
-#: ./sections/Windows.yml:47
-msgid "Center New Windows"
-msgstr ""
-
-#: ./sections/Windows.yml:54
-msgid "Window Action Key"
+#: ./sections/Windows.yml:53
+msgid "Maximize"
 msgstr ""
 
 #: ./sections/Windows.yml:60
+msgid "Buttons on the right"
+msgstr ""
+
+#: ./sections/Windows.yml:68
+msgid "Click Actions"
+msgstr ""
+
+#: ./sections/Windows.yml:72
+msgid "Attach Modal Dialogs"
+msgstr ""
+
+#: ./sections/Windows.yml:78
+msgid "When enabled, modal dialog windows are attached to their parent windows and cannot be moved"
+msgstr ""
+
+#: ./sections/Windows.yml:80
+msgid "Center New Windows"
+msgstr ""
+
+#: ./sections/Windows.yml:87
+msgid "Window Action Key"
+msgstr ""
+
+#: ./sections/Windows.yml:93
 msgid "Disabled"
 msgstr ""
 
-#: ./sections/Windows.yml:61
+#: ./sections/Windows.yml:94
 msgid "Alt"
 msgstr ""
 
-#: ./sections/Windows.yml:62
+#: ./sections/Windows.yml:95
 msgid "Super"
 msgstr ""
 
-#: ./sections/Windows.yml:64
+#: ./sections/Windows.yml:97
 msgid "Resize with Secondary-Click"
 msgstr ""
 
-#: ./sections/Windows.yml:71
+#: ./sections/Windows.yml:104
 msgid "Raise Windows When Focused"
 msgstr ""
 
