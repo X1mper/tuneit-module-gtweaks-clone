@@ -40,7 +40,7 @@
       search_target:
         type: value_in_file
         file_pattern: index.theme
-        key: Name
+        key: GtkTheme
         search_paths:
           - /usr/share/themes/
           - ~/.local/share/themes/
