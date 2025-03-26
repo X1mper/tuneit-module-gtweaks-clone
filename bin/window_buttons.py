@@ -51,12 +51,28 @@ def set_button_side(target_side=True):
             new_right.extend(ordered)
         else:
             new_left.extend(ordered)
-    
-    new_layout = f"{','.join(new_left).strip(',')}:{','.join(new_right).strip(',')}"
+
+    left_str = ','.join(new_left).strip(',')
+    right_str = ','.join(new_right).strip(',')
+
+    if left_str and right_str:
+        new_layout = f"{left_str}:{right_str}"
+    elif left_str:
+        new_layout = f"{left_str}:"
+    elif right_str:
+        new_layout = f":{right_str}"
+    else:
+        new_layout = ":"
+
     new_layout = re.sub(r":+", ":", new_layout)
-    new_layout = re.sub(r"^:|:$", "", new_layout)
     new_layout = re.sub(r",+", ",", new_layout)
-    
+
+    if ":" not in new_layout:
+        if left_str:
+            new_layout += ":"
+        elif right_str:
+            new_layout = ":" + new_layout
+
     subprocess.run(["gsettings", "set", "org.gnome.desktop.wm.preferences", "button-layout", new_layout])
 
 def has_button(button):
