@@ -6,13 +6,14 @@ ADDITIONAL_YAML_DIR="./sections"
 
 mkdir -p "$(dirname "$POT_FILE")"
 
-echo "" > "$POT_FILE"
+declare -A SEEN_MSGS
 
 add_message() {
     local msg="$1"
     local file="$2"
     local line_num="$3"
-    if [[ -n "$msg" ]]; then
+    if [[ -n "$msg" && -z "${SEEN_MSGS[$msg]}" ]]; then
+        SEEN_MSGS[$msg]=1
         echo "#: $file:$line_num" >> "$POT_FILE"
         echo "msgid \"$msg\"" >> "$POT_FILE"
         echo "msgstr \"\"" >> "$POT_FILE"
