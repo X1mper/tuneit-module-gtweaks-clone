@@ -36,31 +36,31 @@
   page: "Windows"
   type: custom
   settings:
+    - name: _Buttons on the right
+      type: boolean
+      get_command: "{module_path}/bin/window_buttons.sh get_value side"
+      set_command: "{module_path}/bin/window_buttons.sh set_value side {value}"
+      map:
+        True: "true"
+        False: "false"
     - name: _Close
       type: boolean
-      get_command: "python3 {module_path}/bin/window_buttons.py has_button close"
-      set_command: "python3 {module_path}/bin/window_buttons.py close {value}"
+      get_command: "{module_path}/bin/window_buttons.sh get_value close"
+      set_command: "{module_path}/bin/window_buttons.sh set_value close {value} {_Buttons on the right}"
       map:
         True: "true"
         False: "false"
     - name: _Minimize
       type: boolean
-      get_command: "python3 {module_path}/bin/window_buttons.py has_button minimize"
-      set_command: "python3 {module_path}/bin/window_buttons.py minimize {value}"
+      get_command: "{module_path}/bin/window_buttons.sh get_value minimize"
+      set_command: "{module_path}/bin/window_buttons.sh set_value minimize {value} {_Buttons on the right}"
       map:
         True: "true"
         False: "false"
     - name: _Maximize
       type: boolean
-      get_command: "python3 {module_path}/bin/window_buttons.py has_button maximize"
-      set_command: "python3 {module_path}/bin/window_buttons.py maximize {value}"
-      map:
-        True: "true"
-        False: "false"
-    - name: _Buttons on the right
-      type: boolean
-      get_command: "python3 {module_path}/bin/window_buttons.py get_button_side"
-      set_command: "python3 {module_path}/bin/window_buttons.py toggle_side"
+      get_command: "{module_path}/bin/window_buttons.sh get_value maximize"
+      set_command: "{module_path}/bin/window_buttons.sh set_value maximize {value} {_Buttons on the right}"
       map:
         True: "true"
         False: "false"
